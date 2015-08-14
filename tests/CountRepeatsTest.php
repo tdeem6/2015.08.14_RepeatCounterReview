@@ -9,11 +9,24 @@
         {
 
           $test_CountRepeats = new CountRepeats;
-          $input_word = "loop";
-          $input_phrase = "This loop is never ending.";
+          $word = "loop";
+          $phrase = "This loop is never ending.";
 
-          $result = $test_CountRepeats->RepeatCounter($input_word, $input_phrase);
+          $result = $test_CountRepeats->RepeatCounter($word, $phrase);
 
           $this->AssertEquals(1, $result);
         }
+        function test_singleWordMatch2()
+        {
+
+          $test_CountRepeats = new CountRepeats;
+          $word = "loop";
+          $phrase = "This loop is a never ending loop.";
+
+          $result = $test_CountRepeats->RepeatCounter($word, $phrase);
+
+          $this->AssertEquals(2, $result);
+        }
+
     }
+?>
