@@ -9,7 +9,7 @@
     ));
 
     $app->get("/", function() use ($app) {
-        return $app['twig']->render('input.html.twig');
+        return $app['twig']->render('home.html.twig');
     });
 
     $app->get("/results", function() use ($app) {
