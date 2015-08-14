@@ -4,7 +4,7 @@
 
     class CountRepeatsTest extends PHPUnit_Framework_TestCase
     {
-
+//had this test working fine, once I started adding to the main method the next tests failed
         function test_singleWordMatch()
         {
 
@@ -16,6 +16,7 @@
 
           $this->AssertEquals(1, $result);
         }
+//Not sure why this test failed again once I worked on main method more, was able to verify 1 count of loop earlier, now returning 0.
         function test_singleWordMatch2()
         {
 
