@@ -11,7 +11,7 @@
     $app->get("/", function() use ($app) {
         return $app['twig']->render('home.html.twig');
     });
-
+//having trouble getting this to return once I submit from home page
     $app->get("/results", function() use ($app) {
 
       $word = $_GET['word'];
