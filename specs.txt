@@ -1,0 +1,18 @@
+Specs Sheet
+
+method repeatCalculator in class RepeatCounter
+
+1. Behavior: checks for a single word match.
+Input: word = "check"
+Input: phrase = "check"
+Output: 1
+
+2. Behavior: checks for single word match inside of a phrase.
+Input: word = "check"
+Input: phrase = "See if the waiter will finally bring us the check."
+Output: 1
+
+3. Behavior: checks for matching words regardless of punctuation or case sensitivity.
+Input: word = "Check"
+Input: phrase = "See if the waiter will finally bring us the check."
+Output: 1
